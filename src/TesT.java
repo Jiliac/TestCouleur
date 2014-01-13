@@ -22,6 +22,9 @@ public class TesT {
 
 	}
 
+	
+	
+	// methode prototype du projet
 	public static void getImageColor(File imagePath) throws IOException {
 
 		// I - recupere deux categorie (on pourrait en faire plus)

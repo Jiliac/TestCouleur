@@ -21,4 +21,12 @@ public class Fenetre extends JFrame {
 		this(Color.orange);
 	}
 	
+	public Fenetre(JPanel panneau){
+		this.setSize(400, 100);
+		this.setLocationRelativeTo(null);
+
+		this.setContentPane(panneau);
+		this.setVisible(true);
+	}
+	
 }
