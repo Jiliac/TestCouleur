@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 
 public class ListePoints extends ArrayList<Point> {
-
+	
+	/******* getter des carac' simple de la liste *******/
+	
 	public Point getCentre() {
 		long sommeX = 0, sommeY = 0;
 		for (Point p : this) {
@@ -20,14 +22,25 @@ public class ListePoints extends ArrayList<Point> {
 		return (int) (sommeRayon / this.size());
 	}
 	
-	public Point getPlusProche(ListePoint lp){
+	/***********  calcule de la meilleurs forme ************/
+	
+	public int comparaison(FormeStandard fs){
+		ListePoints listeToAnalyse = this.centrageListe();
+		int sommeDiff =0;
+		for(Point p : listeToAnalyse)
+			sommeDiff += fs.getDistanceProjete(p);
+		return (int) (sommeDiff/this.size());
+	}
+	
+	public ListePoints centrageListe(){
+		Point centre = this.getCentre();
+		ListePoints lp = new ListePoints();
+		for(Point p : this)
+			lp.add(p.moins(centre));
+		return lp;
 		
 	}
 	
-	public int comparaison(ListePoint lp){
-		/*
-		 * I get plus proche
-		 * II caculer moyenne des distances et la retourner
-		 */
-	}
+	
+	
 }
