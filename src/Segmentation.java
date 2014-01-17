@@ -5,6 +5,9 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import Comparaison.ListePoints;
+import Comparaison.Point;
+
 public class Segmentation {
 
 	public BufferedImage segmenter() {

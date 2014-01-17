@@ -1,3 +1,5 @@
+import Comparaison.ListePoints;
+
 public class TesT {
 
 	public static void main(String[] args) {
@@ -10,5 +12,18 @@ public class TesT {
 		 */
 	}
 
+	/*
+	 * III - comparer a une forme
+	 * 
+	 * 
+	 * III - preambule: pour determiner la dimension generale des formes
+	 * auxquelles on compare il faudrait creer un indice de dispersion generale
+	 * 
+	 * III - a - pour chaque forme, pour chaque point, on le raproche d'un point
+	 * de la forme; on associe une distance à ce point
+	 * 
+	 * III - b - on calcule un indice de "distance" à la forme est on determine
+	 * la forme qui est la plus proche
+	 */
 
 }

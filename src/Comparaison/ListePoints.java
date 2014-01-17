@@ -1,3 +1,4 @@
+package Comparaison;
 import java.util.ArrayList;
 
 public class ListePoints extends ArrayList<Point> {
