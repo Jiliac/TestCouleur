@@ -1,4 +1,5 @@
 package Comparaison;
+
 public class Point {
 
 	/********** les bases ****************/

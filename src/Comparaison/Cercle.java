@@ -1,5 +1,6 @@
 package Comparaison;
 
+
 public class Cercle extends FormeStandard{
 	int rayon;
 	
